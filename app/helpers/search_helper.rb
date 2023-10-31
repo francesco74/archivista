@@ -66,7 +66,7 @@ module SearchHelper
     else
       Rails.application.routes.url_helpers.send("#{klass}_path", entity.id)
     end
-    "http://" + request.host_with_port + url
+    request.protocol + request.host_with_port + url
   end
 
 end

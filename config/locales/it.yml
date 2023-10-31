@@ -1,6 +1,7 @@
 # Common keys
 
 it:
+  advanced_search: "Ricerca avanzata sulle unit&agrave;"
   show_all: "Vedi tutti"
   updated_at: "Data modifica"
   updated_by: "Aggiornato da utente"

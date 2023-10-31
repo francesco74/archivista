@@ -3,3 +3,4 @@
 # TODO: tradurre in inglese dopo riordino generale di locales
 en:
   hello: "Hello World"
+  advanced_search: "Advanced search on units"
