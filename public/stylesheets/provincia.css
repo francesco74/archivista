@@ -1,4 +1,15 @@
 .navbar-advanced-search {
-    float: left;
-    margin-top: 8px;
-  }
+  float: left;
+  margin-top: 8px;
+}
+
+ul.thumbnails {
+  /* height: 200px; */
+  display: grid;
+  padding-left: 4px;
+  padding-top: 10px;
+}
+
+ul.thumbnails li {
+  list-style: none;
+}
