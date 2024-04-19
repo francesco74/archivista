@@ -1,15 +1,72 @@
+@font-face {
+  font-family: "Lato";
+  src: url("/fonts/lato/Lato-Regular.ttf") format("truetype");
+}
+
+
 .navbar-advanced-search {
   float: left;
   margin-top: 8px;
 }
 
 ul.thumbnails {
-  /* height: 200px; */
-  display: grid;
+  display: flex;
   padding-left: 4px;
   padding-top: 10px;
 }
 
 ul.thumbnails li {
   list-style: none;
+}
+
+.form-control .search-query {
+  width: auto !important;
+  display: inline-block;
+}
+
+.navbar-header {
+  float:left !important;
+}
+
+
+
+.logo {
+  background-image: url('/images/logo.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 55px;
+  height: 55px;
+  float: left;
+  margin-right: 3px;
+}
+
+.navbar-nav {
+  float: left !important;
+  margin: 0 !important;
+}
+
+.navbar-form {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 8px 0 0 0  !important;
+  border-color: transparent !important;
+}
+
+.navbar-form .search-query {
+  width: 190px;
+  float: left;
+}
+
+.navbar-nav #nav-descriptions a.dropdown-toggle {
+  padding: 15px;
+    /* background-color: red; */
+}
+
+#content.container {
+  /* background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('images/bibliolucca.jpg'); */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('https://sc.provincia.lucca.it/misc/BiblioLucca_emblema.jpg'); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

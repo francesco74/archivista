@@ -2,7 +2,7 @@
 <html lang="<%= I18n.default_locale.to_s %>">
   <head>
     <meta charset="utf-8">
-    <title><%= content_for?(:title) ? yield(:title) + " |" : "" %> <%= site_short_name %></title>
+   <title><%= content_for?(:title) ? yield(:title) + " |" : "" %> <%= site_short_name %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
@@ -41,6 +41,7 @@
 						<div class="navbar-header">
 <%# Upgrade 2.0.0 inizio %>
 <%# href: sostituito / con current_context_root_path %>
+              <div class="logo"></div>
 							<a class="navbar-brand" href="<%= current_context_root_path %>"><%= (@group.nil? || @group.site_caption.blank?) ? site_name : @group.site_caption %></a>
 <%# Upgrade 2.0.0 fine %>
 						</div>

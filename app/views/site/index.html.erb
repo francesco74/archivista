@@ -27,25 +27,25 @@
   <div class="col-xs-3">
     <h2><%= t('fonds') %></h2>
     <p>
-      <small>Vedi tutti: <%= link_to "#{number_with_delimiter(@fonds_count)} #{t('fonds').downcase} »", current_context_fonds_path %></small>
+      <small><%= link_to "#{number_with_delimiter(@fonds_count)} #{t('fonds').downcase} »", current_context_fonds_path %></small>
     </p>
   </div>
   <div class="col-xs-3">
     <h2><%= t('creators') %></h2>
     <p>
-      <small>Vedi tutti: <%= link_to "#{number_with_delimiter(@creators_count)} #{t('creators').downcase} »", current_context_creators_path %></small>
+      <small><%= link_to "#{number_with_delimiter(@creators_count)} #{t('creators').downcase} »", current_context_creators_path %></small>
     </p>
   </div>
   <div class="col-xs-3">
     <h2><%= t('custodians') %></h2>
     <p>
-      <small>Vedi tutti: <%= link_to "#{number_with_delimiter(@custodians_count)} #{t('custodians').downcase} »", current_context_custodians_path %></small>
+      <small><%= link_to "#{number_with_delimiter(@custodians_count)} #{t('custodians').downcase} »", current_context_custodians_path %></small>
     </p>
   </div>
   <div class="col-xs-3">
     <h2><%= t('projects') %></h2>
     <p>
-      <small>Vedi tutti: <%= link_to "#{number_with_delimiter(@projects_count)} #{t('projects').downcase} »", current_context_projects_path %></small>
+      <small><%= link_to "#{number_with_delimiter(@projects_count)} #{t('projects').downcase} »", current_context_projects_path %></small>
     </p>
   </div>
 </div>
