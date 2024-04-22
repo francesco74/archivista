@@ -45,25 +45,26 @@
 							<a class="navbar-brand" href="<%= current_context_root_path %>"><%= (@group.nil? || @group.site_caption.blank?) ? site_name : @group.site_caption %></a>
 <%# Upgrade 2.0.0 fine %>
 						</div>
-            <ul class="nav navbar-nav">
-              <li class="dropdown" id="nav-descriptions">
-								<a href="#nav-descriptions" class="dropdown-toggle" data-toggle="dropdown">Consulta <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-<%# Upgrade 2.0.0 inizio %>
-<%# href: inserito il riferimento alla rispettiva funzione %>
-<%# Upgrade 2.0.0 fine %>
-                  <li><a href="<%= current_context_fonds_path %>"><%= t('fonds') %></a></li>
-                  <li><a href="<%= current_context_creators_path %>"><%= t('creators') %></a></li>
-                  <li><a href="<%= current_context_custodians_path %>"><%= t('custodians') %></a></li>
-                  <li class="divider"></li>
-                  <li><a href="<%= current_context_institutions_path %>"><%= t('institutions') %></a></li>
-                  <li><a href="<%= current_context_document_forms_path %>"><%= t('document_forms') %></a></li>
-                  <li class="divider"></li>
-                  <li><a href="<%= current_context_projects_path %>"><%= t('projects') %></a></li>
-                </ul>
-              </li>
-            </ul>
-
+            <div id="navbar-nav-wrapper">
+              <ul class="nav navbar-nav">
+                <li class="dropdown" id="nav-descriptions">
+                  <a href="#nav-descriptions" class="dropdown-toggle" data-toggle="dropdown">Consulta <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+  <%# Upgrade 2.0.0 inizio %>
+  <%# href: inserito il riferimento alla rispettiva funzione %>
+  <%# Upgrade 2.0.0 fine %>
+                    <li><a href="<%= current_context_fonds_path %>"><%= t('fonds') %></a></li>
+                    <li><a href="<%= current_context_creators_path %>"><%= t('creators') %></a></li>
+                    <li><a href="<%= current_context_custodians_path %>"><%= t('custodians') %></a></li>
+                    <li class="divider"></li>
+                    <li><a href="<%= current_context_institutions_path %>"><%= t('institutions') %></a></li>
+                    <li><a href="<%= current_context_document_forms_path %>"><%= t('document_forms') %></a></li>
+                    <li class="divider"></li>
+                    <li><a href="<%= current_context_projects_path %>"><%= t('projects') %></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
             
               <% if !ENV['ENABLE_ADVANCED_SEARCH'].nil? %>
                 <% if !ENV['ADVANCED_SEARCH_URL'].nil? %>
@@ -78,17 +79,19 @@
             <% unless !isSearchAvailable? || controller_name == "search" %>
 <%# Upgrade 2.0.0 fine %>
 <%# Upgrade 2.0.0 inizio %>
-            <%#= form_tag search_path, :method => 'get', :class => "navbar-form form-search pull-right form-inline" do %>
-            <%= form_tag current_context_search_path, :method => 'get', :class => "navbar-form form-search pull-right form-inline" do %>
-<%# Upgrade 2.0.0 fine %>
-              <div class="input-append">
-                <%= text_field_tag :q, params[:q], :class => "search-query span3 form-control", :placeholder => "Cerca negli archivi" %>
-                <%= button_tag nil, :name => nil, :class => "btn btn-default", :id => 'global-button' do %>
-                  <i class="glyphicon glyphicon-search"></i>
-                <% end %>
-              </div>
-            <% end %>
-            <% end %>
+            <div id="navbar-form-wrapper">
+              <%#= form_tag search_path, :method => 'get', :class => "navbar-form form-search pull-right form-inline" do %>
+              <%= form_tag current_context_search_path, :method => 'get', :class => "navbar-form form-search pull-right form-inline" do %>
+  <%# Upgrade 2.0.0 fine %>
+                <div class="input-append">
+                  <%= text_field_tag :q, params[:q], :class => "search-query span3 form-control", :placeholder => "Cerca negli archivi" %>
+                  <%= button_tag nil, :name => nil, :class => "btn btn-default", :id => 'global-button' do %>
+                    <i class="glyphicon glyphicon-search"></i>
+                  <% end %>
+                </div>
+              <% end %>
+              <% end %>
+            </div>
           </div>
         </div>
       </div>

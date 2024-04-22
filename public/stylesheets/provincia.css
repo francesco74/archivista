@@ -1,3 +1,11 @@
+@media (max-width: 800px) {
+  #navbar-form-wrapper {
+    display:none;
+    visibility: hidden;
+ }
+}
+  
+  
 @font-face {
   font-family: "Lato";
   src: url("/fonts/lato/Lato-Regular.ttf") format("truetype");
@@ -19,10 +27,12 @@ ul.thumbnails li {
   list-style: none;
 }
 
-.form-control .search-query {
-  width: auto !important;
-  display: inline-block;
+#navbar-nav-wrapper {
+  float:left;
+  margin-left:6px;
+  margin-right: 6px;
 }
+
 
 .navbar-header {
   float:left !important;
@@ -35,33 +45,12 @@ ul.thumbnails li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   float: left;
   margin-right: 3px;
 }
 
-.navbar-nav {
-  float: left !important;
-  margin: 0 !important;
-}
-
-.navbar-form {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  margin: 8px 0 0 0  !important;
-  border-color: transparent !important;
-}
-
-.navbar-form .search-query {
-  width: 190px;
-  float: left;
-}
-
-.navbar-nav #nav-descriptions a.dropdown-toggle {
-  padding: 15px;
-    /* background-color: red; */
-}
 
 #content.container {
   /* background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('images/bibliolucca.jpg'); */
