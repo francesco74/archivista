@@ -196,7 +196,7 @@ $(document).ready(function() {
     handles: {
       'e': "#handle"
     },
-    minWidth: 280,
+    minWidth: 180,
     maxWidth: 760,
     resize: function() {
       reprocessWidths();

@@ -45,6 +45,7 @@
 
 <% if @unit.content.present? %>
   <p>
+  <strong><%= t('content') %></strong><br />
     <%= raw textilize(@unit.content) %>
   </p>
 <% end %>
