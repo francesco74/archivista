@@ -69,7 +69,7 @@
               <% if !ENV['ENABLE_ADVANCED_SEARCH'].nil? %>
                 <% if !ENV['ADVANCED_SEARCH_URL'].nil? %>
                   <div class="navbar-advanced-search">
-                  <button id="advancedSearchButton" class="btn btn-default"><i class="glyphicon glyphicon-filter"></i></button>
+                  <button title="<%= t('advanced_search') %>" id="advancedSearchButton" class="btn btn-default"><i class="glyphicon glyphicon-filter"></i></button>
                   </div>
                 <% end %>
               <% end %>
@@ -84,8 +84,9 @@
               <%= form_tag current_context_search_path, :method => 'get', :class => "navbar-form form-search pull-right form-inline" do %>
   <%# Upgrade 2.0.0 fine %>
                 <div class="input-append">
-                  <%= text_field_tag :q, params[:q], :class => "search-query span3 form-control", :placeholder => "Cerca negli archivi" %>
-                  <%= button_tag nil, :name => nil, :class => "btn btn-default", :id => 'global-button' do %>
+                 <label for="q"><%= t('simple_search') %></label>
+                  <%= text_field_tag :q, params[:q], :class => "search-query span3 form-control", :placeholder => t('simple_search') %>
+                  <%= button_tag nil, :name => nil, :class => "btn btn-default", :id => 'global-button', :title => t('simple_search') do %>
                     <i class="glyphicon glyphicon-search"></i>
                   <% end %>
                 </div>
@@ -104,7 +105,7 @@
 
     <% if !ENV['ENABLE_ADVANCED_SEARCH'].nil? %>
       <% if !ENV['ADVANCED_SEARCH_URL'].nil? %>
-        <iframe id="advanced-search" frameborder="0" style="overflow:hidden;height:85vh;width:100vw;" height="100%" width="100%" src="<%= ENV['ADVANCED_SEARCH_URL'] %>" title="<%= t('advanced-search') %>"></iframe> 
+        <iframe id="advanced-search" frameborder="0" style="overflow:hidden;height:85vh;width:100vw;" height="100%" width="100%" src="<%= ENV['ADVANCED_SEARCH_URL'] %>" title="<%= t('advanced_search') %>"></iframe> 
       <% end %>
     <% end %>
 
