@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // RAILS_ENV=production rake assets:precompile per ricompilare
 
   $.jstree._themes = '/assets/jsTree/themes/';
 
@@ -104,6 +105,8 @@ $(document).ready(function() {
     }
   }).bind("loaded.jstree", function() {
 /* Upgrade 2.0.0 inizio */
+    $(this).jstree('open_all');
+
     var isIE;
     isIE = BrowserDetectIsIE();
 /* Upgrade 2.0.0 fine */
@@ -223,6 +226,16 @@ $(document).ready(function() {
         axis: 'y'
       });
     }
+  });
+
+  $('#expand-tree').click(function() {
+    // Espandi tutti i nodi dell'albero
+    $('#fonds-tree').jstree('open_all');
+  });
+
+  $('#collapse-tree').click(function() {
+    // Espandi tutti i nodi dell'albero
+    $('#fonds-tree').jstree('open_all');
   });
 
 /* Upgrade 2.0.0 inizio */
