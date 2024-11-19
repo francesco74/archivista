@@ -197,8 +197,8 @@ strong, b {
 #handle {
   cursor: col-resize;
   display: block;
-  position: absolute;
-  right: 0;
+  /* position: absolute;
+  right: 0; */
   width: 24px;
   height: 36px;
   font-size: 13px;
