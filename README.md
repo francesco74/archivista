@@ -33,7 +33,7 @@ Lo sviluppo attuale di ArchiVista è curato da INGLOBA360 s.r.l.
 * [http://www.ingloba360.it](http://www.ingloba360.it)
 
 Modifiche
-* [http://bibliolucca.it/SebinaOpacLUA/article/rete-archivistica-lucchese-sezione-archivi/archivi](Provincia di Lucca)
+* [Provincia di Lucca](http://bibliolucca.it/SebinaOpacLUA/article/rete-archivistica-lucchese-sezione-archivi/archivi)
 
 ## Licenza
 ArchiVista è rilasciato sotto licenza GNU General Public License v2.0 o successive.
