@@ -19,6 +19,7 @@ Attivare il motore di ricerca testuale:
 
 ## Crediti
 ArchiVista 3 è sviluppato da INGLOBA360 s.r.l., ed è un'evoluzione di ArchimistaWeb 1.0.
+Modifiche ed aggiornamenti da parte dell'Ufficio Archivio della PRovincia di Lucca
 
 ## Autori
 Codex Società Cooperativa, Pavia
@@ -31,6 +32,12 @@ TAI S.a.s.
 Lo sviluppo attuale di ArchiVista è curato da INGLOBA360 s.r.l.
 * [http://www.ingloba360.it](http://www.ingloba360.it)
 
+Modifiche
+* [http://bibliolucca.it/SebinaOpacLUA/article/rete-archivistica-lucchese-sezione-archivi/archivi](Provincia di Lucca)
+
 ## Licenza
 ArchiVista è rilasciato sotto licenza GNU General Public License v2.0 o successive.
 
+## Immagine virtualizzata
+E' stata resa disponibile anche una immagine virtualizzata utilizzabile in ambiente Docker o Kubernetes prelevabile all'indirizzo 
+cisco74/provincia_lucca:archivista-3.1.1-8
