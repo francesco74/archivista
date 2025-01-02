@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
    <title><%= content_for?(:title) ? yield(:title) + " |" : "" %> <%= site_short_name %></title>
-    <meta id="archivistaViewport" name="viewport" content="width=640">
+    <meta id="archivistaViewport" name="viewport" content="width=1024">
     <script>
     window.onload = function () {
-      if (screen.width > 640) {
+      if (screen.width > 1024) {
         var mvp = document.getElementById('archivistaViewport');
         mvp.setAttribute('content','width=device-width');
       }
